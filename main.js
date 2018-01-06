@@ -11,7 +11,7 @@ app.on('ready', ()=>{
         height: 600,
         width: 800
     });
-
+    mainWindow.setMenu(null);
     mainWindow.loadURL("file://"+__dirname+"/index.html");
 
     mainWindow.on('closed', function(){
